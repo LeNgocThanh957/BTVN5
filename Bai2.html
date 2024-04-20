@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra tích các số chẵn chia hết cho 5 từ a đến b</title>
+</head>
+<body>
+<script>
+    // In ra tích các số chẵn chia hết cho 5 từ a đến b
+    let a = +prompt("Nhập a:");
+    let b = +prompt("Nhập b:");
+    let tich = 1;
+
+    for (let dem = a; dem <= b; dem++) {
+        if (dem % 2 === 0 && dem % 5 === 0) {
+            tich *= dem;
+        }
+    }
+    document.write("Tích các số chẵn chia hết cho 5 từ " + a + " đến " + b + " = " + tich);
+</script>
+</body>
+</html>

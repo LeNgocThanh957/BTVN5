@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra số lượng các số lớn hơn 10 và chia hết cho 3 từ a đến b</title>
+</head>
+<body>
+<script>
+    // In ra số lượng các số lớn hơn 10 và chia hết cho 3 từ a đến b
+    let a = +prompt("Nhập a:");
+    let b = +prompt("Nhập b:");
+    let soLuong = 0;
+
+    for (let dem = a; dem <= b; dem++) {
+        if (dem > 10 && dem % 3 === 0) {
+            soLuong = soLuong + 1;
+        }
+    }
+    document.write("Có " + soLuong + " số lớn hơn 10 và chia hết cho 3 từ " + a + " đến " + b);
+</script>
+</body>
+</html>
